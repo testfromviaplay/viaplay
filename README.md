@@ -1,6 +1,6 @@
 # Viaplay test project
 
-This API is built using flask and gevent WSGI server. 
+This API is built using flask and gevent WSGI server. Currently it's verified under Ubuntu 16.04 + Python 2.7 environment
 
 When the API start, it will listen on a configured port, any http get request to this port will be validated. If the request point to an allowed website and contains a valid movie infor request, the request will be send to the allowed website. The API expect to receive a valid IMDB id from this request
 
@@ -48,16 +48,17 @@ When start the api, configuration file /etc/viaplay.json will be read.
 
 ## Reason of why build the API in current way
 
-
 ### choose of flask
 I choose flask instead of Node.js mainly due to the exception handling reason. 2 years ago before I start to work with RESTful microframeworks, did some evaluation among several options at that time. The conclusion was if we want to have reasonable error handling "out of box", Node.js will be out of options.
 
 There are some other reasons when choosing flask instead of other microframeworks:
-  - light weight
+  - light weight and mean while powerful enough
   - Blueprints make it very easy to expand the project in future
-  - 
+  - most widely used python microframework, means when some problem happenes during developing or integerating, the problem is most likely already be tagged by other users and fixed or walk-arounded
+  - almost painless when deploying with pip
 
 ### choose of gevent
+Using gevent together with flask means requests to the service is almost "non-blocking"
 
 ## History
 
