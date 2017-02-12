@@ -1,0 +1,10 @@
+{
+    "TRAILER_GET_SERVER_PORT": 5951,
+    "TIMEOUT": 2,
+    "UPLOAD_FOLDER":  "procedures/",
+    "VALID_URL_LIST": ["https://content.viaplay.se/pc-se/film/", "http://localhost:9090/"],
+    "PATH_TO_IMDBINFO": "_embedded[\"viaplay:blocks\"][0]._embedded[\"viaplay:product\"].content.imdb:",
+    "TMDB_KEY": "e2c169ebf96ff0ca4ee06425fa38a941",
+    "TRAILER_FETCHER": "https://api.themoviedb.org/3/movie/",
+    "PREFERED_LANGUAGE": "en-US"
+}
