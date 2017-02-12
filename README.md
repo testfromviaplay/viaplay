@@ -18,7 +18,6 @@ If the IMDB id is valid, this API will try to use this IMDB and get available yo
 
 ## Usage
 
-    start viaplay-api
     sudo bash
     source venv/bin/activate
     viaplay-api
@@ -26,11 +25,13 @@ If the IMDB id is valid, this API will try to use this IMDB and get available yo
 ## Testing
 
    1. start the fake movie info website
+   
         cd viaplay/viaplay/tests/
         ./start_fake.sh
     
    2. send some curl command to the viaplay-api, to verify it can handle the URL it get, or genereate correct exception
-        curl -X GET 'http://127.0.0.1:5951/api/v1.0/find?url=http://localhost:9090/pc-se/film/ted-2-2015'
+   
+         curl -X GET 'http://127.0.0.1:5951/api/v1.0/find?url=http://localhost:9090/pc-se/film/ted-2-2015'
 
 ## Configuration
 
