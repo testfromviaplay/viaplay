@@ -58,7 +58,7 @@ There are some other reasons when choosing flask instead of other microframework
   - almost painless when deploying with pip
 
 ### choose of gevent
-Using gevent together with flask means requests to the service is almost "non-blocking"
+Using gevent together with flask means requests to the service is almost "non-blocking", and it's very light weight 
 
 ## History
 
