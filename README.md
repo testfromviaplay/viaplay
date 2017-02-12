@@ -48,6 +48,17 @@ When start the api, configuration file /etc/viaplay.json will be read.
 
 ## Reason of why build the API in current way
 
+
+### choose of flask
+I choose flask instead of Node.js mainly due to the exception handling reason. 2 years ago before I start to work with RESTful microframeworks, did some evaluation among several options at that time. The conclusion was if we want to have reasonable error handling "out of box", Node.js will be out of options.
+
+There are some other reasons when choosing flask instead of other microframeworks:
+  - light weight
+  - Blueprints make it very easy to expand the project in future
+  - 
+
+### choose of gevent
+
 ## History
 
 TODO: Write history
