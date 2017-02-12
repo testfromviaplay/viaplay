@@ -10,7 +10,7 @@ If the IMDB id is valid, this API will try to use this IMDB and get available yo
 
     sudo apt install python-pip
     pip install virtualenv
-    git clone ?????
+    git clone https://github.com/testfromviaplay/viaplay.git
     virtualenv venv
     source venv/bin/activate
     pip install -e viaplay/
