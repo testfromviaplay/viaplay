@@ -18,7 +18,6 @@ If the IMDB id is valid, this API will try to use this IMDB and get available yo
 
 ## Usage
 
-    start viaplay-api
     sudo bash
     source venv/bin/activate
     viaplay-api
