@@ -46,19 +46,19 @@ When start the API, configuration file /etc/viaplay.json will be read.
     "TRAILER_FETCHER": "https://api.themoviedb.org/3/movie/",  ## using API v3 from tmdb website, "get movie" API
     "PREFERED_LANGUAGE": "en-US"
 
-## Reason of why build the API in current way
+## Why build the API in current way
 
 ### choose of flask
-I choose flask instead of Node.js mainly due to the exception handling reason. 2 years ago before I start to work with RESTful microframeworks, did some evaluation among several options at that time. The conclusion was if we want to have reasonable error handling "out of box", Node.js will be out of options.
+I choose flask instead of Node.js mainly due to the exception handling. 2 years ago before I started to work with RESTful microframeworks, did some evaluation among several options at that time. The conclusion was if we want to have reasonable error handling "out of box", Node.js will be out of options.
 
 There are some other reasons when choosing flask instead of other microframeworks:
-  - light weight and mean while powerful enough
+  - light weight and meanwhile powerful enough
   - Blueprints make it very easy to expand the project in future
-  - most widely used python microframework, means when some problem happenes during developing or integerating, the problem is most likely already be tagged by other users and fixed or walk-arounded
+  - most widely used python microframework, means when some problem happenes during developing or integerating, the problem is most likely already be tagged by other users, and fixed or walk-arounded
   - almost painless when deploying with pip
 
 ### choose of gevent
-Using gevent together with flask means requests to the service is almost "non-blocking", and it's very light weight 
+Using gevent together with flask means requests to the service is almost "non-blocking", and it's very light weight.
 
 ## History
 
