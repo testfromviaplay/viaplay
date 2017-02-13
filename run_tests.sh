@@ -77,6 +77,10 @@ function run_tests {
   # Cleanup *.pyc
   ${wrapper} find . -type f -name "*.pyc" -delete
 
+  # Start the fake server
+  python ./viaplay/tests/fake_movie_info.py &
+  pid_save=$!
+
   if [ "$testopts" = "" ]; then
     testopts="-v"
   fi
@@ -105,6 +109,8 @@ function run_tests {
   bash -c "${wrapper} $TESTRTESTS"
   RESULT=$?
   set -e
+
+  kill $pid_save
 
   return $RESULT
 }
