@@ -21,7 +21,6 @@ packaging==16.8
 paramiko==2.1.1
 pbr==1.10.0
 pep8==1.7.0
-pkg-resources==0.0.0
 prettytable==0.7.2
 pyasn1==0.2.2
 pycparser==2.17
